@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Sistema de Registro de Ponto</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Registro de Ponto</h1>
+        <div id="entrada">
+            <h2>Registro de Entrada</h2>
+            <div id="camera"></div>
+            <input type="email" id="inputEmail" placeholder="Digite seu email">
+            <button onclick="registrarEntrada()">Registrar Entrada</button>
+            <p id="entradaStatus"></p>
+        </div>
+
+        <div id="saida">
+            <h2>Registro de Saída</h2>
+            <div id="qrCodeScannerSaida"></div>
+            <button onclick="registrarSaida()">Registrar Saída</button>
+            <p id="saidaStatus"></p>
+        </div>
+
+        <!-- Adicione um local para exibir o histórico de emails -->
+        <ul id="historicoEmailList" class="historico-email"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
