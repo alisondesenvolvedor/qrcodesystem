@@ -11,22 +11,15 @@
         <h1>Sistema de Registro de Ponto</h1>
         <div id="entrada">
             <h2>Registro de Entrada</h2>
-            <div id="camera"></div>
+            <video id="camera" playsinline></video>
             <input type="email" id="inputEmail" placeholder="Digite seu email">
             <button onclick="registrarEntrada()">Registrar Entrada</button>
             <p id="entradaStatus"></p>
         </div>
-
-        <div id="saida">
-            <h2>Registro de Saída</h2>
-            <div id="qrCodeScannerSaida"></div>
-            <button onclick="registrarSaida()">Registrar Saída</button>
-            <p id="saidaStatus"></p>
-        </div>
-
-        <!-- Adicione um local para exibir o histórico de emails -->
-        <ul id="historicoEmailList" class="historico-email"></ul>
+        
+        <!-- Resto do código permanece igual -->
     </div>
+    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
